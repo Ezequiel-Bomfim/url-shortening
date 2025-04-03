@@ -1,0 +1,105 @@
+@media (max-width: 1050px){
+    .intro-container .container 
+    .intro-text-button{
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 976px) {
+    .advanced-statistics{
+        height: 105rem;
+    }
+
+    .advanced-statistics .container 
+    .statistics-card{
+        gap: 5rem;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .advanced-statistics .container 
+    .statistics-card::before{
+        transform: rotate(90deg);
+        right: 5px;
+    }
+    
+
+    .advanced-statistics .container 
+    .statistics-card .card {
+        text-align: center;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+
+    .advanced-statistics .container .statistics-card .card:nth-child(n){
+        margin-top: 2rem;
+    }
+
+    .advanced-statistics .container 
+    .statistics-card .card .img-box{
+        left: 130px;
+    }
+}
+
+@media (max-width: 730px) {
+    .intro-container .container {
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 640px){
+    .shorten-link-container 
+    .shorten-link .form input{
+        width: 40rem;
+    }
+}
+
+@media (max-width: 540px){
+    .shorten-link-container 
+    .shorten-link .form{
+        flex-direction: column;
+        flex-basis: 29rem;
+        gap: 1.5rem;
+        height: 13rem;
+        background: var(--boost-shorten-background)
+        url(../images/bg-shorten-mobile.svg) top -50px right -15px no-repeat;
+    }
+
+    .shorten-link-container 
+    .shorten-link .form input,
+    .shorten-link-container 
+    .shorten-link .form button{
+        width: 25rem;
+        margin: 0;
+    }
+
+    .boost-links-container .container{
+        background: var(--boost-shorten-background) url(../images/bg-boost-mobile.svg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 450px){
+    .footer-container .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .footer-container .container
+    .footer-list-links{
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 365px){
+    .advanced-statistics .container 
+    .statistics-card::before{
+        top: 48%;
+        right: -1px;
+    }
+}

@@ -1,0 +1,279 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: var(--default-font);
+}
+
+.header-container .container 
+.navigation-list a,
+.intro-container .container 
+.intro-text-button p,
+.advanced-statistics .container .info p,
+.advanced-statistics .container
+.statistics-card .card p,
+.footer-container .container 
+.footer-list-links 
+.list-links ul li a{
+    color: var(--color-text);
+}
+
+.header-container .container 
+.navigation-list .login-sign-up button,
+.intro-container .container 
+.intro-text-button button,
+.shorten-link-container 
+.shorten-link .form button,
+.boost-links-container .container button{
+    color: #fff;
+    background-color: var(--button-background);
+
+    border: none;
+    transition: var(--default-transition);
+    font-family: var(--default-font);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-container .container 
+.navigation-list .login-sign-up button:hover,
+.intro-container .container 
+.intro-text-button button:hover,
+.shorten-link-container 
+.shorten-link .form button:hover,
+.boost-links-container .container button:hover{
+    background-color: hsl(180, 74%, 74%);
+}
+
+.intro-container .container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 2rem 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container .container 
+.intro-text-button{
+    max-width: 45rem;
+    margin-right: auto;
+}
+
+.intro-container .container 
+.intro-text-button h1{
+    line-height: 4.5rem;
+}
+
+.intro-container .container 
+.intro-text-button h1,
+.advanced-statistics 
+.container .info h2,
+.advanced-statistics .container 
+.statistics-card .card h3{
+    color: var(--title-color);
+}
+
+.intro-container .container 
+.intro-text-button p{
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+.intro-container .container 
+.intro-text-button button,
+.boost-links-container 
+.container button{
+    border-radius: 3rem;
+    width: 15rem;
+    height: 4rem;
+    margin-top: 2rem;
+}
+
+.intro-container .container 
+.intro-img{
+    max-width: 50rem;
+    padding: 1rem;
+}
+
+.intro-container .container 
+.intro-img img{
+    width: 90%;
+}
+
+.shorten-link-container 
+.shorten-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    margin-top: 8rem;
+    background-color: var(--primary-background);
+    padding: 0 .5rem 12rem .5rem;
+}
+
+.shorten-link-container 
+.shorten-link .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--boost-shorten-background)
+    url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+    flex-basis: 70rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.shorten-link-container 
+.shorten-link .form input{
+    font-family: var(--default-font);
+    border: none;
+    border-radius: 0.5rem; 
+    height: 4rem;
+    padding: 1rem;
+    width: 50rem;
+    margin-right: 0.5rem;
+}
+
+.shorten-link-container 
+.shorten-link .form button{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+
+.advanced-statistics{
+    height: 68rem;
+    background-color: var(--primary-background);
+    padding: 1rem;
+}
+
+.advanced-statistics .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advanced-statistics
+.container .info{
+    text-align: center;
+    max-width: 50.5rem;
+}
+
+.advanced-statistics 
+.container .info h2{
+    margin-bottom: 1rem;
+}
+
+.advanced-statistics .container 
+.statistics-card::before{
+    content: "";
+    background-color: var(--button-background);
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+}
+
+.advanced-statistics .container 
+.statistics-card{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.advanced-statistics .container 
+.statistics-card .card{
+    border-radius: .5rem;
+    position: relative;
+    background-color: #fff;
+    max-width: 35rem;
+    max-height: 25rem;
+    padding: 6rem 2rem 2rem 2rem;
+}
+
+.advanced-statistics .container 
+.statistics-card .card:nth-child(2){
+    margin-top: 4rem;
+}
+
+.advanced-statistics .container 
+.statistics-card .card:nth-child(3){
+    margin-top: 8rem;
+}
+
+.advanced-statistics .container 
+.statistics-card .card .img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--boost-shorten-background);
+}
+
+.advanced-statistics .container 
+.statistics-card .card p{
+    margin-top: 1rem;
+}
+
+.boost-links-container .container{
+    padding: 5rem 0;
+    background: var(--boost-shorten-background) url(../images/bg-boost-desktop.svg);
+    background-size: cover;
+    text-align: center;
+}
+
+.footer-container{
+    background-color: var(--footer-background);
+    padding: 10rem 1rem;
+}
+
+.footer-container .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container .container
+.footer-list-links{
+    display: flex;
+    gap: 7rem;
+}
+
+.footer-container .container
+.footer-list-links .list-links h4{
+    margin-bottom: 2rem;
+}
+
+.boost-links-container .container h2,
+.footer-container .container
+.footer-list-links .list-links h4,
+.footer-container .social-media a i{
+    color: #fff;
+}
+
+.footer-container .container .footer-list-links .list-links ul li{
+    margin-bottom: 1rem;
+}
+
+.footer-container .footer-list-links 
+.list-links ul li a:hover,
+.footer-container .social-media a i:hover{
+    color: var(--button-background);
+    transition: var(--default-transition);
+}
+
+.footer-container .social-media a i{
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}

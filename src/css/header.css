@@ -1,0 +1,196 @@
+.header-container{
+    margin-top: 2rem;
+}
+
+.header-container .container {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.header-container .container .logo{
+    margin-right: 3rem;
+}
+
+.header-container .container .logo a{
+    display: flex;
+}
+
+.header-container .container 
+.navigation-list{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.header-container .container 
+.navigation-list ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: auto;
+}
+
+.header-container .container 
+.navigation-list a{
+    font-weight: 700;
+}
+
+.header-container .container 
+.navigation-list a:hover{
+    color: #000;
+    transition: var(--default-transition);
+}
+
+.header-container .container 
+.navigation-list .login-sign-up{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-container .container 
+.navigation-list .login-sign-up button{
+    border-radius: 3rem;
+    width: 9rem;
+    height: 3.5rem;
+}
+
+.header-container .container 
+.navigation-list .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.header-container .container .navigation-list .menu .hamburguer{
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    transition: 0.5s ease-in-out;
+}
+
+.header-container .container .navigation-list .menu .hamburguer::before,
+.header-container .container .navigation-list .menu .hamburguer::after{
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header-container .container .navigation-list .menu .hamburguer::before{
+    top: -10px;
+}
+
+.header-container .container .navigation-list .menu .hamburguer::after{
+    bottom: -10px;
+}
+
+.header-container .container 
+.navigation-list input{
+    display: none;
+}
+
+.header-container .container .navigation-list input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header-container .container .navigation-list input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header-container .container .navigation-list input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 770px){
+    .header-container{
+        margin-top: 3rem;
+    }
+
+    .header-container .container .navigation-list .menu{
+        display: block;
+        align-self: flex-end;
+    }   
+
+    .header-container .container .navigation-list label{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container .container .navigation-list ul,
+    .header-container .container .navigation-list .login-sign-up{
+        display: none;
+    }
+
+    .header-container .container 
+    .navigation-list input:checked ~ ul{
+        display: block;
+    } 
+
+    .header-container .container .navigation-list input:checked ~ .login-sign-up {
+        display: flex;
+    }
+
+    .header-container .container 
+    .navigation-list{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        margin: 0;
+        width: fit-content;
+    }
+
+    .header-container .container 
+    .navigation-list ul{
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .header-container .container 
+    .navigation-list ul li:last-child
+    {
+        border-bottom: 1px solid hsl(180, 6%, 36%);
+    }
+
+    .header-container .container .navigation-list .login-sign-up{
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .header-container .container .navigation-list 
+    .login-sign-up button{
+        width: 20rem;
+    }
+
+    .header-container .container 
+    .navigation-list ul,
+    .header-container .container .navigation-list .login-sign-up{
+        width: 25rem;
+        background-color: var(--boost-shorten-background);
+        padding: 2rem;
+    }
+    
+    .header-container .container 
+    .navigation-list ul li a{
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+
+    .header-container .container .navigation-list .login-sign-up a, 
+    .header-container .container 
+    .navigation-list ul li a{
+        color: #fff;
+    }
+}
+
